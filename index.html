@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사과 합 10 게임</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>사과 합 10 게임</h1>
+      <p class="desc">드래그해서 사과를 선택하세요. 선택한 숫자 합이 10이면 사과가 사라집니다.</p>
+
+      <section class="hud" aria-label="게임 정보">
+        <div>남은 사과: <strong id="remainCount">0</strong></div>
+        <div>제거한 사과: <strong id="removedCount">0</strong></div>
+        <div>현재 합: <strong id="currentSum">0</strong></div>
+      </section>
+
+      <div id="board" class="board" aria-label="사과 보드"></div>
+
+      <section class="actions">
+        <button type="button" id="resetBtn">새 게임</button>
+      </section>
+
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
